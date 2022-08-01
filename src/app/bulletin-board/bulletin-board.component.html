@@ -1,5 +1,5 @@
-<h1>{{title}}</h1>
-
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <title>HVC Community Boards HTML wireframes</title>
@@ -17,7 +17,7 @@
     <main role="main">
         <header role="banner">
             <nav role="navigation">
-                <img class="logo" src="../assets/images/HVC-logo.png" alt="HVC logo" />
+                <img class="logo" src="images/HVC-logo.png" alt="HVC logo" />
                 <ul class="nav-items">
                     <li><a href="./hub.html">HUB</a></li>
                     <li><a href="./bulletin-board.html">BULLETINS</a></li>
@@ -26,33 +26,41 @@
                     <li><a href="./index.html">LOGOUT</a></li>
                 </ul>
             </nav>
-            <h1><img class="hero" src="../assets/images/community-boards-sticky.png" alt="Community Boards"></h1>
+            <h1><img class="hero" src="images/marketplace-sticky.png" alt="Marketplace"></h1>
         </header>
-
-        <section class="intro">
-            <p class="green"> HVC Community Boards is a hub for the HVC community to connect and support each other.
-                Connect with your classmates, your fellow cast members, and the whole HVC community! Find out when your
-                friends will be at events like More Improv More Better! Support members of the community by visiting
-                Marketplace Boards!</p>
-            <p>...</p>
-            <p class="blue">This site is for you if:</p>
-            <p class="blue">⭐ You have taken or taught at least 1 class at HVC</p>
-            <p class="blue">⭐ You agree to follow all HVC Policies</p>
-            <p>...</p>
-            <p class="green">NEVER MISS A CHANCE FOR MORE JOY & EASE!​</p>
-            <p class="green">LET'S MAKE THE HAPPY VALLEY HAPPIER!</p>
-            <p class="green-button"><a href ="./signup.html">Join</a></p>
+        <ul class="tabs">
+            <li><img class="sticky" src="images/bulletin-board-sticky.png" alt="Bulletin Board"></li>
+            <li class="little-green-button"><a href="./directory.html">Business Directory</a></li>
+        </ul>
+        <section class="hub-post">
+            <p class="poster"><mark>@Biz</mark></p>
+            <p class="post-content">Selling a gray upholstered chair - barely used.</p>
+        </section>
+        <section class="hub-post">
+            <p class="poster"><mark>@Pam</mark></p>
+            <p class="post-content">Support _____’s store: XXXXXX</p>
+        </section>
+        <section class="hub-post">
+            <p class="poster"><mark>@Scott</mark></p>
+            <p class="post-content">Something</p>
+        </section>
+        <section class="hub-post">
+            <p class="poster"><mark>@Sally</mark></p>
+            <p class="post-content">Something</p>
+        </section>
+    
+        <section class="new-hub-post">
+            <form class="blue">
+                <label for="new-post">New Post</label><br>
+                <input class="blue-post-box" type="text" id="new-post" name="new-post"placeholder="Type here..."><br>
+            </form>
+            <p class="blue-post-button">Post</p>
         </section>
 
-        <section class="login-form">
-            <h2><img class="sticky" src="../assets/images/log-in-sticky.png" alt="Log In"></h2>
-            <form class="blue">
-                <label for="e-mail">e-mail</label><br>
-                <input class="blue-box" type="text" id="e-mail" name="e-mail"><br>
-                <label for="password">password</label><br>
-                <input class="blue-box" type="text" id="password" name="password">
-            </form>
-            <p class="blue-button">Go!</p>
+        <section class="problem">
+            <p class = "green">Having technical issues?</p>
+            <p class = "green">Feeling uncomfortable about another member’s post?</p>
+            <p class = "little-green-button"><a href = "./report.html">Report a Problem</a></p>
         </section>
 
     </main>
@@ -81,3 +89,4 @@
     </footer>
 </body>
 
+</html>

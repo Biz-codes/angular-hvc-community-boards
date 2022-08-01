@@ -1,5 +1,5 @@
-<h1>{{title}}</h1>
-
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <title>HVC Community Boards HTML wireframes</title>
@@ -17,7 +17,7 @@
     <main role="main">
         <header role="banner">
             <nav role="navigation">
-                <img class="logo" src="../assets/images/HVC-logo.png" alt="HVC logo" />
+                <img class="logo" src="images/HVC-logo.png" alt="HVC logo" />
                 <ul class="nav-items">
                     <li><a href="./hub.html">HUB</a></li>
                     <li><a href="./bulletin-board.html">BULLETINS</a></li>
@@ -26,33 +26,39 @@
                     <li><a href="./index.html">LOGOUT</a></li>
                 </ul>
             </nav>
-            <h1><img class="hero" src="../assets/images/community-boards-sticky.png" alt="Community Boards"></h1>
+            <h1><img class="hero" src="images/new-listing-sticky.png" alt="New Listing"></h1>
         </header>
 
-        <section class="intro">
-            <p class="green"> HVC Community Boards is a hub for the HVC community to connect and support each other.
-                Connect with your classmates, your fellow cast members, and the whole HVC community! Find out when your
-                friends will be at events like More Improv More Better! Support members of the community by visiting
-                Marketplace Boards!</p>
-            <p>...</p>
-            <p class="blue">This site is for you if:</p>
-            <p class="blue">⭐ You have taken or taught at least 1 class at HVC</p>
-            <p class="blue">⭐ You agree to follow all HVC Policies</p>
-            <p>...</p>
-            <p class="green">NEVER MISS A CHANCE FOR MORE JOY & EASE!​</p>
-            <p class="green">LET'S MAKE THE HAPPY VALLEY HAPPIER!</p>
-            <p class="green-button"><a href ="./signup.html">Join</a></p>
+        <section class="report-form">
+            <form class="green">
+                <label for="title">listing title</label><span class="red"> *</span><br>
+                <input class="green-box" type="text" id="title" name="title" placeholder="Type here..."><br>
+                <label for="category">category</label><br>
+                <select class="green-box" type="text" id="category" name="category"> 
+                    <option value="retail">Retail</option>
+                    <option value="healthcare">Healthcare</option>
+                    <option value="restaurant">Restaurant/Bar</option>
+                    <option value="service">Service</option>
+                </select><br>
+                <label for="location" type="text" id="location" name="location">location</label><br>
+                <select class="green-box" type="text" id="location" name="location"> 
+                    <option value="northampton">Northampton, MA</option>
+                    <option value="hadley">Hadley, MA</option>
+                    <option value="amherst">Amherst, MA</option>
+                    <option value="brattleboro">Brattleboro, VT</option>
+                </select><br> 
+                <label for="website" class="message">website</label><br>
+                <input class="green-box" type="text" id="website" name="website" placeholder="Type here..."><br>
+                <label for="description" class="message">description</label><br>
+                <input class="green-box" type="text" id="description" name="description" placeholder="Type here..."><br>
+            </form>
+            <p class="little-green-button"><a href ="./directory.html">Add Listing</a></p>
         </section>
 
-        <section class="login-form">
-            <h2><img class="sticky" src="../assets/images/log-in-sticky.png" alt="Log In"></h2>
-            <form class="blue">
-                <label for="e-mail">e-mail</label><br>
-                <input class="blue-box" type="text" id="e-mail" name="e-mail"><br>
-                <label for="password">password</label><br>
-                <input class="blue-box" type="text" id="password" name="password">
-            </form>
-            <p class="blue-button">Go!</p>
+        <section class="problem">
+            <p class = "green">Having technical issues?</p>
+            <p class = "green">Feeling uncomfortable about another member’s post?</p>
+            <p class = "little-green-button"><a href = "./report.html">Report a Problem</a></p>
         </section>
 
     </main>
@@ -81,3 +87,4 @@
     </footer>
 </body>
 
+</html>

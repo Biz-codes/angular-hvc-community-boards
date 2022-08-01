@@ -1,10 +1,11 @@
-<h1>{{title}}</h1>
-
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <title>HVC Community Boards HTML wireframes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Cabin&display=swap" rel="stylesheet">
@@ -17,7 +18,7 @@
     <main role="main">
         <header role="banner">
             <nav role="navigation">
-                <img class="logo" src="../assets/images/HVC-logo.png" alt="HVC logo" />
+                <img class="logo" src="images/HVC-logo.png" alt="HVC logo" />
                 <ul class="nav-items">
                     <li><a href="./hub.html">HUB</a></li>
                     <li><a href="./bulletin-board.html">BULLETINS</a></li>
@@ -26,34 +27,40 @@
                     <li><a href="./index.html">LOGOUT</a></li>
                 </ul>
             </nav>
-            <h1><img class="hero" src="../assets/images/community-boards-sticky.png" alt="Community Boards"></h1>
+            <h1><img class="hero" src="images/signup-sticky.png" alt="Sign up"></h1>
         </header>
 
-        <section class="intro">
-            <p class="green"> HVC Community Boards is a hub for the HVC community to connect and support each other.
-                Connect with your classmates, your fellow cast members, and the whole HVC community! Find out when your
-                friends will be at events like More Improv More Better! Support members of the community by visiting
-                Marketplace Boards!</p>
-            <p>...</p>
-            <p class="blue">This site is for you if:</p>
-            <p class="blue">⭐ You have taken or taught at least 1 class at HVC</p>
-            <p class="blue">⭐ You agree to follow all HVC Policies</p>
-            <p>...</p>
-            <p class="green">NEVER MISS A CHANCE FOR MORE JOY & EASE!​</p>
-            <p class="green">LET'S MAKE THE HAPPY VALLEY HAPPIER!</p>
-            <p class="green-button"><a href ="./signup.html">Join</a></p>
+        <section class="signup-form">
+            <form class="green">
+                <label for="firstname">first name</label><span class="red"> *</span><br>
+                <input class="green-box" type="text" id="firstname" name="firstname"><br>
+                <label for="lastname">last name</label><span class="red"> *</span><br>
+                <input class="green-box" type="text" id="lastname" name="lastname"><br>
+                <label for="username">username</label><span class="red"> *</span><br>
+                <input class="green-box" type="text" id="username" name="username"><br>
+                <label for="e-mail">e-mail</label><span class="red"> *</span><br>
+                <p class="red">must contain ‘@’</p>
+                <input class="green-box" type="text" id="e-mail" name="e-mail"><br>
+                <label for="password">password</label><span class="red"> *</span><br>
+                <p class="red">must contain </p>
+                <p class="red">★ 1 capital letter</p>
+                <p class="red">★ 1 lowercase letter</p>
+                <p class="red">★ 1 number</p>
+                <p class="red">★ 1 symbol</p>
+                <input class="green-box" type="text" id="password" name="password"><br>
+                <label for="repassword">repeat password</label><span class="red"> *</span><br>
+                <input class="green-box" type="text" id="repassword" name="repassword">                
+            </form>
+            <p class="little-green-button"><a href ="./pending.html">Go!</a></p>
+            <p class="blue-button"><a href ="./index.html">Back to Login</a></p>
         </section>
 
-        <section class="login-form">
-            <h2><img class="sticky" src="../assets/images/log-in-sticky.png" alt="Log In"></h2>
-            <form class="blue">
-                <label for="e-mail">e-mail</label><br>
-                <input class="blue-box" type="text" id="e-mail" name="e-mail"><br>
-                <label for="password">password</label><br>
-                <input class="blue-box" type="text" id="password" name="password">
-            </form>
-            <p class="blue-button">Go!</p>
+        <section class="problem">
+            <p class = "green">Having technical issues?</p>
+            <p class = "green">Feeling uncomfortable about another member’s post?</p>
+            <p class = "little-green-button"><a href = "./report.html">Report a Problem</a></p>
         </section>
+
 
     </main>
     <footer role="content-info">
@@ -81,3 +88,4 @@
     </footer>
 </body>
 
+</html>

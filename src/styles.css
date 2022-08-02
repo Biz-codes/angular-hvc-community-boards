@@ -1,1 +1,264 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Cabin", sans-serif;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    line-height: 1.5;
+    margin: 5%;
+}
+
+nav,
+footer {
+    /* padding: 1% 0; */
+    background-color: #fff;
+
+}
+
+/* header  */
+nav {
+    /* position: fixed; */
+    display: block;
+    width: 100%;
+    top: 0;
+    /* text-align: left; */
+    padding: 10px;
+    /* background-color: #e9ebf8; */
+    /* opacity: 0.8; */
+    font-family: "Cabin", sans-serif;
+}
+
+/* header nav ul.nav-items,
+  header nav img.logo {
+    display: inline-block;
+    width: auto;
+  } */
+
+/* header  */
+nav ul.nav-items,
+footer section.contact ul.contact-list {
+    list-style-type: none;
+    margin-left: 0px;
+    margin-right: 40px;
+    /* float: right; */
+}
+
+footer section.contact {
+    font-family: "Annie Use Your Telescope", sans-serif;
+}
+
+/* header */
+ nav ul.nav-items li {
+    /* display: inline-block; */
+    width: auto;
+    padding: 5px 10px;
+    border-right: 2px solid #FEFCFD;
+}
+
+.hero {
+    width: 250px;
+    padding-top: 30px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.sticky {
+    width: 150px;
+    padding-top: 50px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.green {
+    color: #68C074
+}
+
+.blue {
+    color: #45a0d2ff
+}
+
+.red {
+    color: red;
+    font-size: 16px;
+}
+
+p.red {
+    padding: 0;
+    margin: 0;
+}
+
+.green-button {
+    display: block;
+    margin-left: 25%;
+    width: 50%;
+    padding: 10px 20px;
+    border: 3px solid #f8db49;
+    border-radius: 10px;
+    background-color: #81C46C;
+    color: #FEFCFD;
+    text-decoration: none;
+}
+
+.little-green-button {
+    display: block;
+    margin-left: 35%;
+    width: 30%;
+    padding: 10px 20px;
+    border: 3px solid #f8db49;
+    border-radius: 10px;
+    background-color: #81C46C;
+    color: #FEFCFD;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.blue-button {
+    display: block;
+    margin-left: 35%;
+    width: 30%;
+    padding: 10px 20px;
+    border: 3px solid #f8db49;
+    border-radius: 10px;
+    background-color: #45a0d2ff;
+    color: #FEFCFD;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.hub-post {
+    border: 3px solid #f8db49;
+    background-color: #93E3FE;
+    text-align: left;
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.listing {
+    border: 3px solid #f8db49;
+    background-color: #B3F4BC;
+    text-align: left;
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+}
+
+mark {
+    background-color: #f8db49;
+    padding: 5px 10px;
+}
+
+a:link {
+    text-decoration: none;
+    color: #FEFCFD;
+}
+
+header a:link {
+    color: black;
+}
+
+.blue-box {
+    border-radius: 5px;
+    border: 1px solid #45a0d2ff;
+    padding: 5px 10px;
+}
+
+.blue-post-box {
+    border-radius: 5px;
+    border: 1px solid #45a0d2ff;
+    padding: 20px 10px;
+    vertical-align: top;
+    width: 95%;
+    /* margin-left: 2.5% */
+}
+
+.green-box {
+    border-radius: 5px;
+    border: 1px solid #68C074;
+    padding: 5px 10px;
+}
+
+.intro {
+    margin-top: 0;
+    padding-top: 0
+}
+
+.problem {
+    border: 1px solid gray;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.new-hub-post {
+    text-align: left;
+    font-size: 16px;
+    margin-left: 2.5%
+}
+
+.blue-post-button {
+    display: block;
+    margin-left: 35%;
+    width: 30%;
+    padding: 10px 20px;
+    border: 2px solid #f8db49;
+    border-radius: 10px;
+    background-color: #45a0d2ff;
+    color: #FEFCFD;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.green-search-button {
+    display: block;
+    margin-left: 35%;
+    width: 30%;
+    padding: 10px 20px;
+    border: 2px solid #f8db49;
+    border-radius: 10px;
+    background-color: #81C46C;
+    color: #FEFCFD;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.search-and-filter {
+    font-size: 16px;
+}
+
+ul.tabs {
+    display: block;
+    /* width: auto; */
+    list-style-type: none;
+    margin-left: 0px;
+    margin-right: 40px;
+}
+
+footer {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border: 0px;
+    color: #13498a;
+    font-size: 75%;
+}
+
+footer a:link {
+    bottom: 30px;
+    right: 30px;
+    color: #13498a;
+}
+
+footer a:hover {
+    color: #0ad1f0;
+}
+
+footer ul li {
+    display: inline-block;
+    width: auto;
+    padding: 5px 10px;
+    font-size: 150%;
+}

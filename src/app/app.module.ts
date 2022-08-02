@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { BulletinBoardComponent } from './bulletin-board/bulletin-board.component';
 import { DirectoryComponent } from './directory/directory.component';
@@ -9,6 +8,9 @@ import { NewListingComponent } from './new-listing/new-listing.component';
 import { PendingComponent } from './pending/pending.component';
 import { ReportComponent } from './report/report.component';
 import { SignupComponent } from './signup/signup.component';
+import { LandingComponent } from './landing/landing.component';
+import { AppRoutingModule } from './app-routing.module';
+import { FootComponent } from './foot/foot.component';
 
 @NgModule({
   declarations: [
@@ -19,10 +21,13 @@ import { SignupComponent } from './signup/signup.component';
     NewListingComponent,
     PendingComponent,
     ReportComponent,
-    SignupComponent
+    SignupComponent,
+    LandingComponent,
+    FootComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

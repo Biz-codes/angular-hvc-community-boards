@@ -11,6 +11,7 @@ import { SignupComponent } from './signup/signup.component';
 import { LandingComponent } from './landing/landing.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FootComponent } from './foot/foot.component';
+import { ProblemComponent } from './problem/problem.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FootComponent } from './foot/foot.component';
     ReportComponent,
     SignupComponent,
     LandingComponent,
-    FootComponent
+    FootComponent,
+    ProblemComponent
   ],
   imports: [
     BrowserModule,

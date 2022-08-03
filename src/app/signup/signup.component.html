@@ -1,91 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
+<h1><img class="hero" src="./assets/images/signup-sticky.png" alt="Sign up"></h1>
 
-<head>
-    <title>HVC Community Boards HTML wireframes</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+<section class="signup-form">
+  <form class="green">
+    <label for="firstname">first name</label><span class="red"> *</span><br>
+    <input class="green-box" type="text" id="firstname" name="firstname"><br>
+    <label for="lastname">last name</label><span class="red"> *</span><br>
+    <input class="green-box" type="text" id="lastname" name="lastname"><br>
+    <label for="username">username</label><span class="red"> *</span><br>
+    <input class="green-box" type="text" id="username" name="username"><br>
+    <label for="e-mail">e-mail</label><span class="red"> *</span><br>
+    <p class="red">must contain ‘@’</p>
+    <input class="green-box" type="text" id="e-mail" name="e-mail"><br>
+    <label for="password">password</label><span class="red"> *</span><br>
+    <p class="red">must contain </p>
+    <p class="red">★ 1 capital letter</p>
+    <p class="red">★ 1 lowercase letter</p>
+    <p class="red">★ 1 number</p>
+    <p class="red">★ 1 symbol</p>
+    <input class="green-box" type="text" id="password" name="password"><br>
+    <label for="repassword">repeat password</label><span class="red"> *</span><br>
+    <input class="green-box" type="text" id="repassword" name="repassword">
+  </form>
+  <p class="little-green-button"><a href="./pending.html">Go!</a></p>
+  <p class="blue-button"><a href="./index.html">Back to Login</a></p>
+</section>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Cabin&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-</head>
-
-<body>
-    
-    <main role="main">
-        <header role="banner">
-            <nav role="navigation">
-                <img class="logo" src="images/HVC-logo.png" alt="HVC logo" />
-                <ul class="nav-items">
-                    <li><a href="./hub.html">HUB</a></li>
-                    <li><a href="./bulletin-board.html">BULLETINS</a></li>
-                    <li><a href="./directory.html">DIRECTORY</a></li>
-                    <li><a href="./report.html">REPORT</a></li>
-                    <li><a href="./index.html">LOGOUT</a></li>
-                </ul>
-            </nav>
-            <h1><img class="hero" src="images/signup-sticky.png" alt="Sign up"></h1>
-        </header>
-
-        <section class="signup-form">
-            <form class="green">
-                <label for="firstname">first name</label><span class="red"> *</span><br>
-                <input class="green-box" type="text" id="firstname" name="firstname"><br>
-                <label for="lastname">last name</label><span class="red"> *</span><br>
-                <input class="green-box" type="text" id="lastname" name="lastname"><br>
-                <label for="username">username</label><span class="red"> *</span><br>
-                <input class="green-box" type="text" id="username" name="username"><br>
-                <label for="e-mail">e-mail</label><span class="red"> *</span><br>
-                <p class="red">must contain ‘@’</p>
-                <input class="green-box" type="text" id="e-mail" name="e-mail"><br>
-                <label for="password">password</label><span class="red"> *</span><br>
-                <p class="red">must contain </p>
-                <p class="red">★ 1 capital letter</p>
-                <p class="red">★ 1 lowercase letter</p>
-                <p class="red">★ 1 number</p>
-                <p class="red">★ 1 symbol</p>
-                <input class="green-box" type="text" id="password" name="password"><br>
-                <label for="repassword">repeat password</label><span class="red"> *</span><br>
-                <input class="green-box" type="text" id="repassword" name="repassword">                
-            </form>
-            <p class="little-green-button"><a href ="./pending.html">Go!</a></p>
-            <p class="blue-button"><a href ="./index.html">Back to Login</a></p>
-        </section>
-
-        <section class="problem">
-            <p class = "green">Having technical issues?</p>
-            <p class = "green">Feeling uncomfortable about another member’s post?</p>
-            <p class = "little-green-button"><a href = "./report.html">Report a Problem</a></p>
-        </section>
-
-
-    </main>
-    <footer role="content-info">
-        <a href='https://www.freepik.com/vectors/post-note'>Post note vector created by macrovector - www.freepik.com</a>
-        <section class="contact" id="contact">
-            <h3>app by Biz</h3>
-            <ul class="contact-list">
-                <li>
-                    <a href="mailto:elizabeth.biz.hight@gmail.com?subject=Responding%20to%20Your%20Portfolio!">
-                        <i class="fa fa-envelope"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/elizabeth-biz-hight/" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/biz-codes" target="_blank" >
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-            </ul>
-        </section>
-    </footer>
-</body>
-
-</html>
+<section class="problem">
+  <p class="green">Having technical issues?</p>
+  <p class="green">Feeling uncomfortable about another member’s post?</p>
+  <p class="little-green-button"><a href="./report.html">Report a Problem</a></p>
+</section>

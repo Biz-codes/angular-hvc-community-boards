@@ -21,12 +21,8 @@
     <label for="repassword">repeat password</label><span class="red"> *</span><br>
     <input class="green-box" type="text" id="repassword" name="repassword">
   </form>
-  <p class="little-green-button"><a href="./pending.html">Go!</a></p>
-  <p class="blue-button"><a href="./index.html">Back to Login</a></p>
+  <p class="little-green-button"><a routerLink="/pending">Go!</a></p>
+  <p class="blue-button"><a href="/landing">Back to Login</a></p>
 </section>
 
-<section class="problem">
-  <p class="green">Having technical issues?</p>
-  <p class="green">Feeling uncomfortable about another member’s post?</p>
-  <p class="little-green-button"><a href="./report.html">Report a Problem</a></p>
-</section>
+<app-problem></app-problem>

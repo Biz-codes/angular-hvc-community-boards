@@ -1,111 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
+<h1><img class="hero" src="./assets/images/marketplace-sticky.png" alt="Marketplace"></h1>
 
-<head>
-    <title>HVC Community Boards HTML wireframes</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Cabin&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-</head>
+<ul class="tabs">
+  <li class="blue-button"><a routerLink="/bulletin-board">Bulletin Board</a></li>
+  <li><img class="sticky" src="./assets/images/business-directory-sticky.png" alt="Business Directory"></li>
 
-<body>
-    
-    <main role="main">
-        <header role="banner">
-            <nav role="navigation">
-                <img class="logo" src="images/HVC-logo.png" alt="HVC logo" />
-                <ul class="nav-items">
-                    <li><a href="./hub.html">HUB</a></li>
-                    <li><a href="./bulletin-board.html">BULLETINS</a></li>
-                    <li><a href="./directory.html">DIRECTORY</a></li>
-                    <li><a href="./report.html">REPORT</a></li>
-                    <li><a href="./index.html">LOGOUT</a></li>
-                </ul>
-            </nav>
-            <h1><img class="hero" src="images/marketplace-sticky.png" alt="Marketplace"></h1>
-        </header>
-        <ul class="tabs">
-            <li class="blue-button"><a href="./bulletin-board.html">Bulletin Board</a></li>
-            <li><img class="sticky" src="images/business-directory-sticky.png" alt="Business Directory"></li>
-            
-        </ul>
-        <section class="search-and-filter">
-            <form class="green">
-                <label for="search">Search by listing title</label><br>
-                <input class="green-box" type="text" id="search" name="search" placeholder="Type here..."><br>
-            </form>
-            <p class="green-search-button">Search</p>
-            <p>Filter by:</p>
-            <form class="green">
-                <label for="filter-category">category</label><br>
-                <select class="green-box" type="text" id="filter-category" name="filter-category"> 
-                    <option value="retail">Retail</option>
-                    <option value="healthcare">Healthcare</option>
-                    <option value="restaurant">Restaurant/Bar</option>
-                    <option value="service">Service</option>
-                </select><br>
-                <label for="filter-location" type="text" id="filter-location" name="filter-location">location</label><br>
-                <select class="green-box" type="text" id="filter-location" name="filter-location"> 
-                    <option value="northampton">Northampton, MA</option>
-                    <option value="hadley">Hadley, MA</option>
-                    <option value="amherst">Amherst, MA</option>
-                    <option value="brattleboro">Brattleboro, VT</option>
-                </select><br> 
-            </form>
-            <p class="green-search-button">Filter</p>
-        </section>
-        <section class="listing">
-            <p class="poster"><mark>@Biz</mark></p>
-            <p class="listing-content">Somebody’s Shop</p>
-            <p class="listing-content">Retail</p>
-            <p class="listing-content">Northampton, MA</p>
-            <p class="listing-content">www.somebodyshop.com</p>
-            <p class="listing-content">We sell locally made gifts and treats.</p>
-        </section>
-        <section class="listing">
-            <p class="poster"><mark>@Nobody</mark></p>
-            <p class="listing-content">Dr. Nobody</p>
-            <p class="listing-content">Healthcare</p>
-            <p class="listing-content">Amherst, MA</p>
-            <p class="listing-content">www.doctornobody.health</p>
-            <p class="listing-content">We are a Behavioral Health practice specializing in supporting the LGBTQIA+ community!</p>
-        </section>
-            
-        <section class="add-listing">
-            <p class="little-green-button"><a routerLink="/new-listing">Add New Listing</a></p>
-        </section>
+</ul>
+<section class="search-and-filter">
+  <form class="green">
+    <label for="search">Search by listing title</label><br>
+    <input class="green-box" type="text" id="search" name="search" placeholder="Type here..."><br>
+  </form>
+  <p class="green-search-button">Search</p>
+  <p>Filter by:</p>
+  <form class="green">
+    <label for="filter-category">category</label><br>
+    <select class="green-box" type="text" id="filter-category" name="filter-category">
+      <option value="retail">Retail</option>
+      <option value="healthcare">Healthcare</option>
+      <option value="restaurant">Restaurant/Bar</option>
+      <option value="service">Service</option>
+    </select><br>
+    <label for="filter-location" type="text" id="filter-location" name="filter-location">location</label><br>
+    <select class="green-box" type="text" id="filter-location" name="filter-location">
+      <option value="northampton">Northampton, MA</option>
+      <option value="hadley">Hadley, MA</option>
+      <option value="amherst">Amherst, MA</option>
+      <option value="brattleboro">Brattleboro, VT</option>
+    </select><br>
+  </form>
+  <p class="green-search-button">Filter</p>
+</section>
+<section class="listing">
+  <p class="poster"><mark>@Biz</mark></p>
+  <p class="listing-content">Somebody’s Shop</p>
+  <p class="listing-content">Retail</p>
+  <p class="listing-content">Northampton, MA</p>
+  <p class="listing-content">www.somebodyshop.com</p>
+  <p class="listing-content">We sell locally made gifts and treats.</p>
+</section>
+<section class="listing">
+  <p class="poster"><mark>@Nobody</mark></p>
+  <p class="listing-content">Dr. Nobody</p>
+  <p class="listing-content">Healthcare</p>
+  <p class="listing-content">Amherst, MA</p>
+  <p class="listing-content">www.doctornobody.health</p>
+  <p class="listing-content">We are a Behavioral Health practice specializing in supporting the LGBTQIA+ community!</p>
+</section>
 
-       <app-problem></app-problem>
+<section class="add-listing">
+  <p class="little-green-button"><a routerLink="/new-listing">Add New Listing</a></p>
+</section>
 
-    </main>
-    <footer role="content-info">
-        <a href='https://www.freepik.com/vectors/post-note'>Post note vector created by macrovector - www.freepik.com</a>
-        <section class="contact" id="contact">
-            <h3>app by Biz</h3>
-            <ul class="contact-list">
-                <li>
-                    <a href="mailto:elizabeth.biz.hight@gmail.com?subject=Responding%20to%20Your%20Portfolio!">
-                        <i class="fa fa-envelope"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/elizabeth-biz-hight/" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/biz-codes" target="_blank" >
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-            </ul>
-        </section>
-    </footer>
-</body>
-
-</html>
+<app-problem></app-problem>

@@ -7,6 +7,7 @@ import { LandingComponent } from './landing/landing.component';
 import { ReportComponent } from './report/report.component';
 import { SignupComponent } from './signup/signup.component';
 import { NewListingComponent } from './new-listing/new-listing.component'
+import { PendingComponent } from './pending/pending.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/landing', pathMatch: 'full' },
@@ -16,7 +17,8 @@ const routes: Routes = [
   { path: 'directory', component: DirectoryComponent },
   { path: 'report', component: ReportComponent },
   { path: 'signup', component: SignupComponent },
-  { path: 'new-listing', component: NewListingComponent }
+  { path: 'new-listing', component: NewListingComponent },
+  { path: 'pending', component: PendingComponent}
 ];
 
 @NgModule({
